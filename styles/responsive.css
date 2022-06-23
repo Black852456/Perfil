@@ -1,0 +1,72 @@
+@media(max-width: 415px) {
+    body {}
+    header,
+    main {
+        margin: 0 0rem;
+    }
+    section {
+        margin: 0rem 0rem;
+    }
+    .listamenu>div:not(:last-child) {
+        display: none;
+    }
+    .titular {
+        margin-top: 10px;
+        flex-direction: column-reverse;
+    }
+    .img_perfil {
+        width: 180px;
+        height: 180px;
+    }
+    .titular>div:nth-child(1)>p:nth-child(1) {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .titular>div:nth-child(1)>p:nth-child(2) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .links {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .links>li {
+        font-weight: 600;
+    }
+    .sobre>div {
+        margin: 0rem 1rem;
+    }
+    .proyectos .proyecto {
+        flex-direction: column;
+        margin: 1rem 1rem;
+    }
+    .imagen_demostracion {
+        width: 100%;
+        max-width: 100%;
+    }
+    .descripcion>div>button:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+    .contacto>div {
+        margin: 1rem 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    #contacto_form {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem;
+        padding: 0rem 0rem;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+}

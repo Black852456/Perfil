@@ -1,0 +1,345 @@
+    main {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    section {
+        margin: 0 5rem;
+    }
+    
+    .titular,
+    .sobre,
+    .formacionacademica,
+    .proyectos,
+    .contacto {
+        margin: 3rem 0;
+        display: flex;
+    }
+    
+    .titular {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .titular>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+    
+    .titular>div:nth-child(1)>p:nth-child(1) {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+    }
+    
+    .titular>div:nth-child(1)>p:nth-child(2) {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        /* Preto/100% */
+        color: #464646;
+        margin: 20px 0;
+    }
+    
+    .img_perfil {
+        width: 25%;
+        height: 240px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 200px;
+        flex-shrink: 1;
+        min-height: 240px;
+        min-width: 250px;
+    }
+    
+    .links {
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .links li {
+        margin-right: 20px;
+    }
+    
+    .sobre,
+    .formacionacademica {
+        background: #EAF2FD;
+        padding: 2rem 0;
+    }
+    
+    .sobre>div,
+    .formacionacademica>div {
+        margin: 0 5rem;
+    }
+    
+    .sobre>div>h2,
+    .formacionacademica>div>h2,
+    .skills>div>h2 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .sobre>div>p,
+    .formacionacademica>div>p {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .firma {
+        background-image: url("../img/1280px-WJ_Bryan.png");
+        width: 140px;
+        height: 52px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .margen {}
+    
+    .skills>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .habilidades {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 8px;
+        width: 176px;
+        height: 174px;
+        background: #FFFFFF;
+        margin: 10px 10px;
+        border-radius: 10px;
+        transition: 0.3s all;
+    }
+    
+    .skill:hover {
+        box-shadow: 0px 0px 20px 0px rgba(150, 150, 150, 0.79);
+    }
+    
+    .estandar_imagen_logo {
+        width: 54px;
+        height: 54px;
+    }
+    
+    .skill>p {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .skill>h2 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 24px;
+        line-height: 22px;
+        text-align: center;
+    }
+    
+    .formacionacademica {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formacionacademica>div>h2 {
+        text-align: center;
+    }
+    
+    .formacion>.skill {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formacion>.skill>p {
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .proyectos {
+        flex-direction: column;
+    }
+    
+    .proyecto {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .proyecto:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+    
+    .proyectos .proyecto {
+        margin: 2rem 5rem;
+    }
+    
+    .imagen_demostracion {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 60%;
+        flex-basis: 40%;
+        flex: 1;
+    }
+    
+    .imagen_demostracion:hover {}
+    
+    .descripcion {
+        padding-left: 20px;
+        flex-basis: 40%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-width: 40%;
+        justify-content: center;
+    }
+    
+    .descripcion>h2 {
+        font-size: 23px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    
+    .descripcion>p {
+        line-height: 30px;
+    }
+    
+    .descripcion>div>button:nth-child(1) {
+        background: #6b5ecc;
+        padding: 17px;
+        border: transparent;
+        color: white;
+        border-radius: 3px;
+        margin-right: 20px;
+        font-weight: 1000;
+        transition: 0.3 all;
+    }
+    
+    .descripcion>div>button:nth-child(1):hover {
+        color: #6b5ecc;
+        background: #f9f9f9;
+        border: 1px solid #6b5ecc;
+        cursor: pointer;
+    }
+    
+    .descripcion>div>button:nth-child(2) {
+        background: #f9f9f9;
+        padding: 17px;
+        border: 1px solid #6b5ecc;
+        color: #6b5ecc;
+        border-radius: 3px;
+        margin-right: 20px;
+        font-weight: 1000;
+    }
+    
+    .descripcion>div>button:nth-child(2):hover {
+        color: #f9f9f9;
+        background: #6b5ecc;
+        border: transparent;
+        cursor: pointer;
+    }
+    
+    .contacto {
+        justify-content: center;
+    }
+    
+    .contacto>div {
+        margin: 1rem 5rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contacto>div>h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    #contacto_form {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 5rem;
+        padding: 1rem 4rem;
+    }
+    
+    #contacto_form p {
+        display: none;
+        font-weight: 600;
+        color: #e84343;
+        text-align: left;
+        margin: 0 1rem;
+    }
+    
+    input {
+        width: 100%;
+        height: 30px;
+        border: unset;
+        margin: 1rem;
+        padding: 0.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        border-radius: 3px;
+        transition: 0.1s ease-in-out;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 7rem;
+        border: unset;
+        margin: 1rem;
+        padding: 0.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        border-radius: 3px;
+        transition: 0.1s ease-in-out;
+    }
+    
+    input[type=submit] {
+        background: #6b5ecc;
+        padding: 17px;
+        border: transparent;
+        color: white;
+        border-radius: 3px;
+        font-weight: 1000;
+        transition: 0.3 all;
+        padding-bottom: 40px;
+    }
+    
+    input[type=submit]:hover {
+        color: #6b5ecc;
+        background: #f9f9f9;
+        border: 1px solid #6b5ecc;
+        cursor: pointer;
+    }
